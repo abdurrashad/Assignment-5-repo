@@ -16,13 +16,19 @@
     </header>
 
     <!-- Question 1 -->
+     <div class="p-3 mt-5 rounded-lg flex items-center justify-center">
+        <h1 class="font-bold text-3xl">Blogs</h1>
+     </div>
 
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
         <h1 class="font-bold text-2xl">Question-1: What are the different ways to select an element in the DOM?</h1>
     </div>
 
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
-        <p></p>
+        <p>1.getElementsByTagName  নির্দিষ্ট tag নামের সব এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয় <br>
+            2.getElementsByClassName – নির্দিষ্ট class নামের সব এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয়. <br>3.getElementById – id দিয়ে একটি নির্দিষ্ট এলিমেন্ট সিলেক্ট করতে ব্যবহার করা হয়. <br>  4.querySelector – CSS সিলেক্টরের মাধ্যমে প্রথম ম্যাচিং এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয়। <br>5. querySelectorAll – CSS সিলেক্টরের মাধ্যমে সব ম্যাচিং এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয় । <br>
+            6.getElementsByName – name অ্যাট্রিবিউট দিয়ে এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয়
+        </p>
     </div>
 
     <!-- Question 2 -->
@@ -30,14 +36,17 @@
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
         <h1 class="font-bold text-2xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
     </div>
-    <div class="bg-white p-5 mt-5 rounded-lg shadow-md"></div>
+    <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
+        <p>innerHTML, innerText, এবং textContent এর পার্থক্য সংক্ষেপে <br>
+            1. innerHTML → HTML ট্যাগ সহ কন্টেন্ট নেয় বা সেট করে। এটি HTML প্রসেস করে, তাই XSS নিরাপত্তা ঝুঁকি থাকতে পারে। <br> 2. innerText → শুধুমাত্র দৃশ্যমান টেক্সট নেয়, লুকানো (display: none) কন্টেন্ট উপেক্ষা করে এবং অতিরিক্ত স্পেস বাদ দেয়। <br> 3. textContent → Hidden টেক্সট সহ সম্পূর্ণ টেক্সট নেয়, কিন্তু HTML প্রসেস করে না। এটি স্পেস এবং লাইন ব্রেক সংরক্ষণ করে।</p>
+    </div>
 
     <!-- Question3 -->
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
         <h1 class="font-bold text-2xl">Question-3: What is event delegation in the DOM?</h1>
     </div>
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
-
+        <p>Event Delegation হলো একটি বড় এলিমেন্টের মাধ্যমে  ছোট এলিমেন্টের event হ্যান্ডেল করা। <br> এর ফলে আলাদা আলাদা ইভেন্ট লিসেনার না লাগিয়ে একটিই parent লিসেনার ব্যবহার করা যায়, যা পারফরম্যান্স বাড়ায়।</p>
     </div>
 
     <!-- Question 4 -->
@@ -45,6 +54,7 @@
         <h1 class="font-bold text-2xl">Question-4: What is event bubbling in the DOM?</h1>
     </div>
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
+        <p>Event Bubbling হলো এমন একটি প্রক্রিয়া যেখানে কোনো child element-এ ইভেন্ট ট্রিগার হলে, সেই ইভেন্টটি ধাপে ধাপে তার parent, তারপর grandparent হয়ে document পর্যন্ত পৌঁছে যায়।</p>
     </div>
 
     <!-- Question 5 -->
@@ -52,6 +62,7 @@
         <h1 class="font-bold text-2xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
     </div>
     <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
+        <p>1.আমরা document.createElement("tagName") ব্যবহার করে নতুন element তৈরি করতে পারি। <br>2.appendChild() → Parent-এর শেষে যোগ করা <br>3. append() → Multiple বা Text যোগ করতে পারে <br>4.  prepend() → Parent-এর শুরুতে যোগ করা <br>5.insertBefore() → নির্দিষ্ট জায়গায় যোগ করা <br>6.remove() → সরাসরি element মুছতে পারে <br>7.removeChild() → Parent থেকে child element মুছা </p>
     </div>
 
     

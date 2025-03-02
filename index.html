@@ -248,11 +248,13 @@
                         let currentTime = new Date().toLocaleTimeString();
 
                         // click kora button ar title ana
+
                         const newComment = document.createElement("p");
                         newComment.textContent = ` You have completed the task ${taskTitle} at ${currentTime}`;
                         newComment.classList.add("text-black", "bg-gray-100", "text-bold", "p-2", "rounded-lg", "text-xl", "shadow-sm");
 
                         // Clear History button ar niccha comment add kora
+
                         historySection.appendChild(newComment);
                     }
                 });
@@ -263,7 +265,7 @@
             // alada page a niya jawa
 
             document.getElementById("discover-section").addEventListener("click", function () {
-                window.location.href = "Bloge.html";
+                window.location.href = "index2.html";
             });
 
 
