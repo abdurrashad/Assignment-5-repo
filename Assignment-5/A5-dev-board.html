@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 md:mx-20 p-5 lg:mx-36 ">
+    <!-- header section -->
+
+    <header class="flex flex-col md:flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md">
+
+        <div class="flex items-center ">
+            <img class="mx-2" src="assets/logo.png" alt="">
+            <div class="text-4xl font-bold text-blue-600">Dev<span class="text-black">Board</span></div>
+        </div>
+        <div class="flex gap-1 justify-between items-center">
+            <div class="flex gap-2 justify-between items-center bg-gray-100 p-3 rounded-full">
+                <input type="checkbox" checked class="w-7 h-7 m  text-blue-500 rounded-lg ">
+                <div class="header-count text-3xl font-bold text-blue-900  px-3 py-1 rounded-full"> 23</div>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-full">
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="mt-5 grid grid-cols-1 md:grid-cols-12 gap-5">
+        <section class="md:col-span-9 space-y-10 bg-white md:p-10">
+
+            <!-- new today section -->
+
+            <div class="flex col-span-3 justify-between">
+                <div
+                    class="flex justify-between items-center bg-gray-100 col-span-2 p-5 rounded-lg shadow-md w-1/4 h-28 ">
+                    <div class="flex items-center space-x-2 justify-between ">
+                        <div class="flex p-4 bg-white rounded-full items-center  ">
+                            <input type="checkbox" checked class="w-7 h-7 text-blue-500 rounded-full  bg-white">
+                        </div>
+                        <div>
+                            <span class="text-xl font-semibold">Task Assigned </span><br>
+                            <span class="task-assigned-count text-black text-3xl font-bold">06</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="flex justify-between items-center bg-gradient-to-r from-blue-400 to-purple-500 bg-white col-span-2 p-5 rounded-lg shadow-md w-2/5  h-28 ">
+
+                    <div id="discover-section" class="text-white px-5 py-3 rounded-lg flex cursor-pointer">
+                        <img src="assets/board.png" alt="">
+                        <h2 class="text-3xl font-semibold">Discover Something <br> New Today!</h2>
+                    </div>
+
+                </div>
+                <div class="flex justify-between items-center bg-gray-100 p-5 rounded-lg shadow-md w-1/4 h-28">
+                    <div class="flex items-center space-x-2 ">
+                        <div class="flex p-4 bg-white rounded-full items-center">
+                            <img class="h-7 w-7" src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <span id="live-day" class=" text-xl font-semibold">Wed, </span>
+                            <br>
+                            <span id="live-date" class="font-bold text-2xl">Jul 28 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card section -->
+
+            <div class="grid grid-cols-3 gap-8">
+                <!-- card 1 -->
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base">Shop Ease</h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Fix Mobile Button Issue</h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">
+                        Debug using Chrome DevTools, check for overlapping...
+                    </p>
+                    <div class="flex justify-between mt-2">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline</p>
+                            <span class="text-blue-800 text-lg font-semibold">21 March 2025</span>
+                        </div>
+                        <button class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base ">CloudSync</h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Add Dark Mode</h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">Store the user's preference in
+                        localStorage, update CSS , ... </p>
+                    <div class="flex justify-between mt-5">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline
+                            </p>
+                            <span class="text-blue-800 text-lg font-semibold">21 March 2025</span>
+                        </div>
+                        <button
+                            class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base ">SwiftPay </h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Optimize Home page </h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">Debug using Chrome DevTools, check
+                        for overlapping ... </p>
+                    <div class="flex justify-between mt-5">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline
+                            </p>
+                            <span class="text-blue-800 text-lg font-semibold">21 March 2025</span>
+                        </div>
+                        <button
+                            class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base">Meta</h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Add new emoji 🤲 </h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">Debug using Chrome DevTools, check
+                        for overlapping ... </p>
+                    <div class="flex justify-between mt-5">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline
+                            </p>
+                            <span class="text-blue-800 text-lg font-semibold">21 March 2025</span>
+                        </div>
+                        <button
+                            class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base ">Google LLC </h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Integrate OpenAI API </h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">Debug using Chrome DevTools, check
+                        for overlapping ...</p>
+                    <div class="flex justify-between mt-5">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline
+                            </p>
+                            <span class="text-blue-800 text-xlg font-semibold">21 March 2025</span>
+                        </div>
+                        <button
+                            class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+
+                <div class="bg-gray-100 space-y-5 p-5 rounded-lg shadow-md">
+                    <div class="text-gray-800 bg-white p-2 w-28 rounded-lg">
+                        <h4 class="text-base ">Glassdoar </h4>
+                    </div>
+                    <h3 class="text-2xl text-gray-700 font-bold">Improve Job searching </h3>
+                    <p class="text-gray-600 bg-white p-4 py-6 rounded-lg text-base">Debug using Chrome DevTools, check
+                        for overlapping ...</p>
+                    <div class="flex justify-between mt-5">
+                        <div class="grid grid-cols-1">
+                            <p class="text-lg text-gray-500 font-semibold mt-2">Deadline
+                            </p>
+                            <span class="text-blue-800 text-lg font-semibold">21 March 2025</span>
+                        </div>
+                        <button
+                            class="complete-btn mt-5 bg-blue-500 text-white px-3 py-1 text-lg rounded-lg">Completed</button>
+                    </div>
+                </div>
+
+                <!-- More Task Cards Here -->
+
+            </div>
+        </section>
+        <aside class=" col-span-3 bg-white space-y-4 p-5 rounded-lg shadow-md">
+            <div class="flex space-x-2 items-center justify-center mr-4 mt-5">
+                <img src="assets/activity.png" alt="">
+                <h3 class="text-2xl font-bold ">Activity Log</h3>
+            </div>
+            <div class="flex justify-center items-center  text-cente rounded-lg">
+                <button class=" text-white bg-red-500 py-2 px-4 rounded-lg text-xl">Clear History</button>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- javascript code -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const taskAssignedCount = document.querySelector(".task-assigned-count");
+            const headerCount = document.querySelector(".header-count");
+            const buttons = document.querySelectorAll(".complete-btn");
+            const historySection = document.querySelector("aside"); // Clear History section
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const confirmTask = confirm("Board updated Successfully");
+
+                    if (confirmTask) {
+                        // click kora button ar title add
+
+                        let taskTitle = this.closest(".bg-gray-100").querySelector("h3").textContent;
+
+                        // Button disable
+                        this.disabled = true;
+                        this.classList.add("bg-gray-400", "cursor-not-allowed");
+                        this.classList.remove("bg-blue-500");
+
+                        // Task Assigned number komano
+                        let currentTaskCount = parseInt(taskAssignedCount.textContent);
+                        if (currentTaskCount > 0) {
+                            taskAssignedCount.textContent = currentTaskCount - 1;
+                        }
+
+                        // Header Count number barano
+                        let currentHeaderCount = parseInt(headerCount.textContent);
+                        headerCount.textContent = currentHeaderCount + 1;
+
+                        // live time
+                        let currentTime = new Date().toLocaleTimeString();
+
+                        // click kora button ar title ana
+                        const newComment = document.createElement("p");
+                        newComment.textContent = ` You have completed the task ${taskTitle} at ${currentTime}`;
+                        newComment.classList.add("text-black", "bg-gray-100", "text-bold", "p-2", "rounded-lg", "text-xl", "shadow-sm");
+
+                        // Clear History button ar niccha comment add kora
+                        historySection.appendChild(newComment);
+                    }
+                });
+            });
+
+
+
+            // alada page a niya jawa
+
+            document.getElementById("discover-section").addEventListener("click", function () {
+                window.location.href = "Bloge.html";
+            });
+
+
+
+            //  Clear History comment remove kora
+
+            document.querySelector(".bg-red-500").addEventListener("click", function () {
+                const comments = historySection.querySelectorAll("p");
+                comments.forEach(comment => comment.remove());
+            });
+        });
+
+
+
+
+
+        function updateDate() {
+            const now = new Date();
+
+            // day live
+
+            const dayOptions = { weekday: 'short' };
+            const formattedDay = now.toLocaleDateString('en-US', dayOptions);
+
+            // mounth ,date and year dakhano
+
+            const dateOptions = { month: 'short', day: '2-digit', year: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', dateOptions);
+
+            // HTML-a date update
+            document.getElementById("live-day").textContent = formattedDay + ",";
+            document.getElementById("live-date").textContent = formattedDate;
+        }
+
+        // proti minite a update hoba jodi date change hoy
+        setInterval(updateDate, 60000);
+
+        //time dakhanor jonno call kora
+        updateDate();
+
+    </script>
+
+</body>
+
+</html>
