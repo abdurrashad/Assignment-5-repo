@@ -23,7 +23,7 @@
                 <div class="header-count text-3xl font-bold text-blue-900  px-3 py-1 rounded-full"> 23</div>
             </div>
             <div class="bg-gray-100 p-3 rounded-full">
-                <img src="assets/theme-btn.png" alt="">
+                <img id="theme-btn" src="assets/theme-btn.png" alt="">
             </div>
         </div>
     </header>
@@ -214,6 +214,31 @@
     <!-- javascript code -->
 
     <script>
+
+        // theme set
+        document.getElementById("theme-btn").addEventListener("click", function () {
+          
+            const colors = [
+                "#6642f5", 
+                "#abc2b9", 
+                "#2ecc71", // Green
+                "#f1c40f", // Yellow
+                "#9b59b6", // Purple
+                "#1abc9c", // Teal
+                "#e67e22", // Orange
+                "#34495e"  // Dark Gray
+            ];
+
+            
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+          
+            document.body.style.backgroundColor = randomColor;
+        });
+
+
+
+
         document.addEventListener("DOMContentLoaded", function () {
             const taskAssignedCount = document.querySelector(".task-assigned-count");
             const headerCount = document.querySelector(".header-count");
